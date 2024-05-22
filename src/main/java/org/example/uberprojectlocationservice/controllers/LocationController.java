@@ -32,7 +32,7 @@ public class LocationController {
 
     }
 
-    @GetMapping("/nearby/drivers")
+    @PostMapping("/nearby/drivers")
     public ResponseEntity<List<DriverLocationDto>> getNearbyDrivers(@RequestBody NearbyDriversRequestDto nearbyDriversRequestDto) {
         try {
             List<DriverLocationDto> drivers = locationService.getNearbyDriverLocations(nearbyDriversRequestDto.getLatitude(), nearbyDriversRequestDto.getLongitude());

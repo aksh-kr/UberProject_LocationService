@@ -7,7 +7,6 @@ import org.springframework.data.redis.core.GeoOperations;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
-import javax.swing.text.Position;
 import java.util.ArrayList;
 import java.util.List;
 
